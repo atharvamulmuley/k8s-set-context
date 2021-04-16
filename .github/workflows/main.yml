@@ -36,6 +36,7 @@ jobs:
           echo test, and deploy your project.
       - uses: azure/k8s-set-context@cluster-connect
         with:
+          method: service-account
           cluster-type: 'arc'
           creds: '${{ secrets.AZURE_CREDS }}'
           cluster-name: arcaction
