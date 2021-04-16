@@ -35,11 +35,11 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - uses: azure/k8s-set-context@cluster-connect
-            with:
-              cluster-type: 'arc'
-              creds: '${{ secrets.AZURE_CREDS }}'
-              cluster-name: '<cluster-name>'
-              resource-group: '<resource-group-name>'
-              token: '${{ secrets.SA_TOKEN }}'
+        with:
+          cluster-type: 'arc'
+          creds: '${{ secrets.AZURE_CREDS }}'
+          cluster-name: '<cluster-name>'
+          resource-group: '<resource-group-name>'
+          token: '${{ secrets.SA_TOKEN }}'
       - run: |
           kubectl apply -f <path-to-your-manifest-file>
