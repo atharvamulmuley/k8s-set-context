@@ -38,8 +38,8 @@ jobs:
         with:
           cluster-type: 'arc'
           creds: '${{ secrets.AZURE_CREDS }}'
-          cluster-name: '<cluster-name>'
-          resource-group: '<resource-group-name>'
+          cluster-name: arcaction
+          resource-group: atharvatest2
           token: '${{ secrets.SA_TOKEN }}'
       - run: |
-          kubectl apply -f <path-to-your-manifest-file>
+          kubectl get pods -A
