@@ -34,7 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      - uses: azure/k8s-set-context@cluster-connect
+      - uses: atharvamulmuley/k8s-set-context@cluster-connect
         with:
           method: service-account
           cluster-type: 'arc'
