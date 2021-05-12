@@ -36,3 +36,4 @@ jobs:
           token: '${{ secrets.SA_TOKEN }}'
       - run: |
           kubectl get pods -A
+          
