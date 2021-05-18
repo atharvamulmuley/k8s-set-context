@@ -27,9 +27,9 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDS }}
 
-      - uses: azure/k8s-set-context@cluster-connect-2
+      - uses: azure/k8s-set-context@cluster-connect-release-v1
         with:
-          method: 'service-account'
+          method: 'service-principal'
           cluster-type: 'arc'
           cluster-name: arcaction
           resource-group: atharvatest2
