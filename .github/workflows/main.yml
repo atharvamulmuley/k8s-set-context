@@ -29,7 +29,7 @@ jobs:
 
       - uses: azure/k8s-set-context@cluster-connect-release-v1
         with:
-          method: 'service-principal'
+          method: 'service-account'
           cluster-type: 'arc'
           cluster-name: arcaction
           resource-group: atharvatest2
