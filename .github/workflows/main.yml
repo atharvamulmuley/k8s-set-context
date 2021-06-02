@@ -27,7 +27,7 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDS }}
 
-      - uses: azure/k8s-set-context@v1.1
+      - uses: azure/k8s-set-context@releases/v1
         with:
           method: 'service-account'
           cluster-type: 'arc'
